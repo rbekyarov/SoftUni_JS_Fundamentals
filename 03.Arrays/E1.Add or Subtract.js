@@ -3,8 +3,9 @@ function solve(arr) {
     let subtract = 0;
     let sumOldArr = 0;
     let sumNewArr = 0;
-    for (let i = 0; i < arr, length; i++) {
-        sumOldArr += Number(arr[i])
+    for (let i = 0; i < arr.length; i++) {
+        let value = Number(arr[i]);
+        sumOldArr += value
     }
     for (let i = 0; i < arr.length; i++) {
 
@@ -17,8 +18,9 @@ function solve(arr) {
             arr[i] = subtract;
         }
     }
-    for (let i = 0; i < arr, length; i++) {
-        sumNewArr += Number(arr[i]);
+    for (let i = 0; i < arr.length; i++) {
+        let value = Number(arr[i]);
+        sumNewArr += value
     }
     console.log(arr);
     console.log(sumOldArr);
@@ -27,3 +29,4 @@ function solve(arr) {
 
 
 solve([5, 15, 23, 56, 35]);
+solve([-5, 11, 3, 0, 2]);

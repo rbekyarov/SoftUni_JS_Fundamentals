@@ -1,0 +1,73 @@
+***********Creating************
+let numbers = [1, 2, 3, 4, 5];
+let names = [];
+
+***********Accessing***********************************
+  console.log(numbers[0]); // 1
+
+***********LAST ELEMENT*******************************
+    arr[arr.length - 1]
+
+************Check contains*****************************
+     arr.includes()
+
+************Print array **********
+  console.log(capitals.toString())
+  console.log(nums.join(', '));
+
+************Print array FOR-OF *************************
+   let numbers = [ 1, 2, 3, 4, 5 ];
+    let output = '';
+    for (let number of numbers)
+        output += `${number} `;
+    console.log(output);
+
+************Print array FOR-IN **************************
+    let numbers = [ 5, 4, 3, 2, 1 ];
+    let output = '';
+    for (let index in numbers);
+        output += `${index} `;
+    console.log(output);
+
+********************METHOD.pop()**************************
+Remove the last element of an array:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.pop();   // Removes "Mango"
+
+********************METHOD.shift()**************************
+Remove the first item of an array:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.shift();  // Removes "Banana"
+
+*******************METHOD.push()***************************
+Add a new item to an array:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");   // Adds "Kiwi"
+
+*******************METHOD.unshift()***************************
+Add new items to the beginning of an array:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.unshift("Lemon","Pineapple"); //Lemon,Pineapple,Banana,Orange,Apple,Mango
+
+*******************METHOD.sort()***************************
+Sort an array:
+
+const fruits = ["Banana", "Orange", "Apple", "Mango"];
+fruits.push("Kiwi");   // Apple,Banana,Mango,Orange
+
+*******************METHOD.concat()***************************
+Join two arrays:
+
+const hege = ["Cecilie", "Lone"];
+const stale = ["Emil", "Tobias", "Linus"];
+const children = hege.concat(stale);
+
+*******************METHOD.from()***************************
+Create an Array from a String:
+Array.from("ABCDEFG")   // Returns [A,B,C,D,E,F,G]
+
+

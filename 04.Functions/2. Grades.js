@@ -1,0 +1,19 @@
+function solve(score){
+    score=Number(score);
+    let grade = "";
+    if(score<3){
+        grade = "Fail";
+    }else if (score>= 3.00 &&  score < 3.50){
+        grade = "Poor";
+    }else if (score>= 3.50 &&  score < 4.50){
+        grade = "Good";
+    }else if (score>= 4.50 &&  score < 5.50){
+        grade = "Very good";
+    }else {
+        grade = "Excellent";
+    }
+      return grade;
+}
+console.log(solve(5));
+
+

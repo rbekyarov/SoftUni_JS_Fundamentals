@@ -8,7 +8,8 @@ function solve(num1, num2, num3) {
 
     }
     let result = sum(num1,num2);
-    console.log(substr(result,num3));
+    //console.log(substr(result,num3));
+    return substr(result,num3);
 
 }
 

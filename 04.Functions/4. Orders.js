@@ -16,8 +16,8 @@ function solve(product,quantity){
             break;
     }
     totalPrice = price*quantity;
-   // console.log(`${totalPrice.toFixed(2)}`);
-    return `${totalPrice.toFixed(2)}`;
+   //console.log(`${totalPrice.toFixed(2)}`);
+    return totalPrice.toFixed(2);
 
 }
 solve("water",5);

@@ -1,6 +1,4 @@
 function solve(num) {
-
-
     function getNumDivideByNum(num) {
         let arrayNum = [];
         for (let i = 1; i < num; i++) {
@@ -12,15 +10,14 @@ function solve(num) {
         for (let i = 0; i < arrayNum.length; i++) {
             sum += Number(arrayNum[i]);
         }
-       if (sum===num){
-           console.log("We have a perfect number!")
-       } else {
-           console.log("It's not so perfect.")
-       }
-
+        return sum
     }
-    getNumDivideByNum(num);
 
+    if (getNumDivideByNum(num) === num) {
+        console.log("We have a perfect number!")
+    } else {
+        console.log("It's not so perfect.")
+    }
 }
 
 solve(6);

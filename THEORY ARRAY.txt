@@ -4,18 +4,28 @@
 let numbers = [1, 2, 3, 4, 5];
 let names = [];
 
+
+
 *********** Accessing ***********************************
   console.log(numbers[0]); // 1
+
+
 
 *********** LAST ELEMENT*******************************
     arr[arr.length - 1]
 
+
+
 ************Check contains*****************************
      arr.includes()
+
+
 
 ************ Print array **********
   console.log(capitals.toString())
   console.log(nums.join(', '));
+
+
 
 ************ Print array FOR-OF *************************
    let numbers = [ 1, 2, 3, 4, 5 ];
@@ -24,6 +34,8 @@ let names = [];
         output += `${number} `;
     console.log(output);
 
+
+
 ************ Print array FOR-IN **************************
     let numbers = [ 5, 4, 3, 2, 1 ];
     let output = '';
@@ -31,11 +43,17 @@ let names = [];
         output += `${index} `;
     console.log(output);
 
+
+
+
 ******************** METHOD.pop() **************************
 Remove the last element of an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();   // Removes "Mango"
+
+
+
 
 
 ********************METHOD.shift()**************************
@@ -45,6 +63,8 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.shift();  // Removes "Banana"
 
 
+
+
 ******************* METHOD.push()***************************
 Add a new item to an array:
 
@@ -52,11 +72,17 @@ const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");   // Adds "Kiwi"
 
 
+
+
+
 ******************* METHOD.unshift() ***************************
 Add new items to the beginning of an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.unshift("Lemon","Pineapple"); //Lemon,Pineapple,Banana,Orange,Apple,Mango
+
+
+
 
 ******************* METHOD.slice() ***************************
 Remove a range of elements:
@@ -66,6 +92,8 @@ let sliced = myArray.slice(2);
 console.log(myArray); //["one","two","three","four","five"]
 console.log(sliced); // ["three","four","five"]
 console.log(myArray.slice(2,4)); // ["three","four"]
+
+
 
 
 ******************* METHOD.splice()  ***************************
@@ -81,11 +109,14 @@ nums.splice(3, 2, "twenty", "twenty-five");
 console.log(nums.join('|')); // 5|10|15|twenty|twenty-five|30
 
 
+
 ******************* METHOD.sort() ***************************
 Sort an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");   // Apple,Banana,Mango,Orange
+
+
 
 ******************* METHOD.concat() ***************************
 Join two arrays:
@@ -94,9 +125,13 @@ const hege = ["Cecilie", "Lone"];
 const stale = ["Emil", "Tobias", "Linus"];
 const children = hege.concat(stale);
 
+
+
 ******************* METHOD.from() ***************************
 Create an Array from a String:
 Array.from("ABCDEFG")   // Returns [A,B,C,D,E,F,G]
+
+
 
 
 ******************* METHOD.filter() ***************************
@@ -104,6 +139,9 @@ Array.from("ABCDEFG")   // Returns [A,B,C,D,E,F,G]
 let filteredNums =
  nums.filter(x => x.startsWith('t'));
 console.log(filteredNums.join('|')); // two|three
+
+
+
 
 ******************* METHOD.map() ***************************
 
@@ -116,6 +154,8 @@ console.log(lengths.join('|')); // 3|3|5|4
 let lengths = nums.map(x => [x.length, x[0]]);
 console.log(lengths.join('|')); // 3,o|3,t|5,t|4,f
 
+
+
 ******************* Sorting Arrays ***************************
 
 let nums = [20, 40, 10, 30, 100, 5];
@@ -127,6 +167,8 @@ console.log(nums.join('|')); // 10|100|20|30|40|5
 
 nums.sort((a, b) => a-b); // Compare elements as numbers
 console.log(nums.join('|')); // 5|10|20|30|40|100
+
+
 
 ******************* Sorting String Arrays ***************************
 

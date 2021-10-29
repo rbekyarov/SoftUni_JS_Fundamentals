@@ -1,39 +1,42 @@
-***********Creating************
+
+
+*********** Creating ************
 let numbers = [1, 2, 3, 4, 5];
 let names = [];
 
-***********Accessing***********************************
+*********** Accessing ***********************************
   console.log(numbers[0]); // 1
 
-***********LAST ELEMENT*******************************
+*********** LAST ELEMENT*******************************
     arr[arr.length - 1]
 
 ************Check contains*****************************
      arr.includes()
 
-************Print array **********
+************ Print array **********
   console.log(capitals.toString())
   console.log(nums.join(', '));
 
-************Print array FOR-OF *************************
+************ Print array FOR-OF *************************
    let numbers = [ 1, 2, 3, 4, 5 ];
     let output = '';
     for (let number of numbers)
         output += `${number} `;
     console.log(output);
 
-************Print array FOR-IN **************************
+************ Print array FOR-IN **************************
     let numbers = [ 5, 4, 3, 2, 1 ];
     let output = '';
     for (let index in numbers);
         output += `${index} `;
     console.log(output);
 
-********************METHOD.pop()**************************
+******************** METHOD.pop() **************************
 Remove the last element of an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();   // Removes "Mango"
+
 
 ********************METHOD.shift()**************************
 Remove the first item of an array:
@@ -41,33 +44,92 @@ Remove the first item of an array:
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.shift();  // Removes "Banana"
 
-*******************METHOD.push()***************************
+
+******************* METHOD.push()***************************
 Add a new item to an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");   // Adds "Kiwi"
 
-*******************METHOD.unshift()***************************
+
+******************* METHOD.unshift() ***************************
 Add new items to the beginning of an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.unshift("Lemon","Pineapple"); //Lemon,Pineapple,Banana,Orange,Apple,Mango
 
-*******************METHOD.sort()***************************
+******************* METHOD.slice() ***************************
+Remove a range of elements:
+
+let myArray = ["one","two","three","four","five"];
+let sliced = myArray.slice(2);
+console.log(myArray); //["one","two","three","four","five"]
+console.log(sliced); // ["three","four","five"]
+console.log(myArray.slice(2,4)); // ["three","four"]
+
+
+******************* METHOD.splice()  ***************************
+Insert at position/delete from position:
+
+
+let nums = [5, 10, 15, 20, 25, 30];
+let mid = nums.splice(2, 3); // start, delete-count
+console.log(mid.join('|'));  // 15|20|25
+console.log(nums.join('|')); // 5|10|30
+
+nums.splice(3, 2, "twenty", "twenty-five");
+console.log(nums.join('|')); // 5|10|15|twenty|twenty-five|30
+
+
+******************* METHOD.sort() ***************************
 Sort an array:
 
 const fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi");   // Apple,Banana,Mango,Orange
 
-*******************METHOD.concat()***************************
+******************* METHOD.concat() ***************************
 Join two arrays:
 
 const hege = ["Cecilie", "Lone"];
 const stale = ["Emil", "Tobias", "Linus"];
 const children = hege.concat(stale);
 
-*******************METHOD.from()***************************
+******************* METHOD.from() ***************************
 Create an Array from a String:
 Array.from("ABCDEFG")   // Returns [A,B,C,D,E,F,G]
 
 
+******************* METHOD.filter() ***************************
+
+let filteredNums =
+ nums.filter(x => x.startsWith('t'));
+console.log(filteredNums.join('|')); // two|three
+
+******************* METHOD.map() ***************************
+
+let nums = ['one', 'two', 'three', 'four'];
+console.log(nums.join('|')); // one|two|three|four
+
+let lengths = nums.map(x => x.length);
+console.log(lengths.join('|')); // 3|3|5|4
+
+let lengths = nums.map(x => [x.length, x[0]]);
+console.log(lengths.join('|')); // 3,o|3,t|5,t|4,f
+
+******************* Sorting Arrays ***************************
+
+let nums = [20, 40, 10, 30, 100, 5];
+ console.log(nums.join('|')); // 20|40|10|30|100|5
+
+
+nums.sort(); // Works incorrectly on arrays of numbers !!!
+console.log(nums.join('|')); // 10|100|20|30|40|5
+
+nums.sort((a, b) => a-b); // Compare elements as numbers
+console.log(nums.join('|')); // 5|10|20|30|40|100
+
+******************* Sorting String Arrays ***************************
+
+let words = ['nest', 'Eggs', 'bite', 'Grip', 'jAw'];
+words.sort((a, b) => a.localeCompare(b));
+// ['bite', 'Eggs', 'Grip', 'jAw', 'nest']
